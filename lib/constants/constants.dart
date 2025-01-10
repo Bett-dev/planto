@@ -23,3 +23,15 @@ const kHeroDescTextStyle = TextStyle(
   fontWeight: FontWeight.w500,
   color: Color(0xffffffff),
 );
+
+const kHeroplantCardDescTextStyle = TextStyle(
+  fontSize: 23,
+  fontWeight: FontWeight.w400,
+  color: Color(0xffffffff),
+);
+
+const kHeroplantCardTitleTextStyle = TextStyle(
+  fontSize: 38,
+  fontWeight: FontWeight.w400,
+  color: Color(0xffffffff),
+);
