@@ -13,87 +13,113 @@ class _PlantoState extends State<Planto> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ConstrainedBox(
-          constraints: BoxConstraints(maxWidth: 1728),
-          child: Stack(
-            fit: StackFit.loose,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage('images/bg.png'),
+        child: SingleChildScrollView(
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/bg.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(
+                  maxWidth: 1728,
+                  minHeight:
+                      2000, // Ensure the page has a minimum height of 2000px
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 47, vertical: 45),
+                  child: Column(
+                    children: [
+                      // Header Section
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.baseline,
+                        textBaseline: TextBaseline.alphabetic,
+                        children: [
+                          // Logo and Title
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.baseline,
+                            textBaseline: TextBaseline.alphabetic,
+                            children: [
+                              Image.asset(
+                                'images/logo.png',
+                                height: 60,
+                              ),
+                              const SizedBox(width: 10),
+                              Text(
+                                "Planto",
+                                style: kLogoTextStyle.copyWith(fontSize: 40),
+                              ),
+                            ],
+                          ),
+
+                          // Navigation Links
+                          Row(
+                            children: const [
+                              NavLink(title: 'Home'),
+                              NavLink(title: 'Plant Types'),
+                              NavLink(title: 'More'),
+                              NavLink(title: 'Contact'),
+                            ],
+                          ),
+
+                          // Icons
+                          Row(
+                            children: const [
+                              Icon(Icons.search, color: Colors.white, size: 28),
+                              SizedBox(width: 10),
+                              Icon(Icons.shopping_cart,
+                                  color: Colors.white, size: 28),
+                              SizedBox(width: 10),
+                              Icon(Icons.menu, color: Colors.white, size: 28),
+                            ],
+                          ),
+                        ],
+                      ),
+
+                      const SizedBox(height: 60),
+
+                      // Hero Section
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text('Breathe Natural', style: kHeroTextStyle),
+                          const SizedBox(height: 10),
+                          const Text(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+                            'Fusce pretium dolor magna, at pellentesque tortor accumsan eget.',
+                            style: kHeroDescTextStyle,
+                          ),
+                          const SizedBox(height: 20),
+                          Row(
+                            children: [
+                              OutlinedButton(
+                                onPressed: () {},
+                                style: OutlinedButton.styleFrom(
+                                  side: const BorderSide(color: Colors.white),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20, vertical: 10),
+                                ),
+                                child: const Text(
+                                  'Explore',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+
+                      // Placeholder for Long Content
+                      const SizedBox(height: 800),
+                    ],
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 47, right: 47, top: 45),
-                child: Column(
-                  children: [
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.baseline,
-                      textBaseline: TextBaseline
-                          .alphabetic, // Required for proper baseline alignment
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        // Logo and Title
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
-                          children: [
-                            Image.asset(
-                              'images/logo.png',
-                              height: 60, // Image size
-                            ),
-                            SizedBox(
-                                width:
-                                    10), // Adds spacing between image and text
-                            Text(
-                              "Planto",
-                              style: kLogoTextStyle.copyWith(
-                                fontSize:
-                                    40, // Adjust font size to align with image baseline
-                              ),
-                            ),
-                          ],
-                        ),
-
-                        // Navigation Links
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
-                          children: [
-                            NavLink(title: 'Home'),
-                            NavLink(title: 'Plant Types'),
-                            NavLink(title: 'More'),
-                            NavLink(title: 'Contact'),
-                          ]
-                              .map((link) => Padding(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: link,
-                                  ))
-                              .toList(),
-                        ),
-
-                        // Icons
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.search, color: Colors.white, size: 28),
-                            SizedBox(width: 10),
-                            Icon(Icons.shopping_cart,
-                                color: Colors.white, size: 28),
-                            SizedBox(width: 10),
-                            Icon(Icons.menu, color: Colors.white, size: 28),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
@@ -101,6 +127,7 @@ class _PlantoState extends State<Planto> {
   }
 }
 
+// Navigation Link Widget
 class NavLink extends StatelessWidget {
   const NavLink({super.key, required this.title});
   final String title;
