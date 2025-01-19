@@ -60,7 +60,7 @@ class _PlantoState extends State<Planto> {
                           // Navigation Links
                           Row(
                             children: const [
-                              NavLink(title: 'Home'),
+                              NavLink(title: 'Home Page'),
                               NavLink(title: 'Plant Types'),
                               NavLink(title: 'More'),
                               NavLink(title: 'Contacts'),
