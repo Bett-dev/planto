@@ -87,7 +87,7 @@ class _PlantoState extends State<Planto> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Breathe Natural', style: kHeroTextStyle),
+                          const Text('Breathe Natura', style: kHeroTextStyle),
                           const SizedBox(height: 10),
                           const Text(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
