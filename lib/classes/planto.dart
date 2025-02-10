@@ -63,7 +63,7 @@ class _PlantoState extends State<Planto> {
                               NavLink(title: 'Home'),
                               NavLink(title: 'Plant Types'),
                               NavLink(title: 'More'),
-                              NavLink(title: 'Contact'),
+                              NavLink(title: 'Contacts'),
                             ],
                           ),
 
