@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const kLogoTextStyle = TextStyle(
   fontSize: 28,
-  fontWeight: FontWeight.w900,
+  fontWeight: FontWeight.w600,
   color: Color(0xffffffff),
 );
 
