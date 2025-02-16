@@ -97,7 +97,7 @@ class _PlantoState extends State<Planto> {
                           const SizedBox(height: 20),
                           Row(
                             children: [
-                              OutlineButton(text: 'Explore'),
+                              OutlineButton(text: 'Exploe'),
                             ],
                           ),
                         ],
