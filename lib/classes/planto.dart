@@ -91,7 +91,7 @@ class _PlantoState extends State<Planto> {
                           const SizedBox(height: 10),
                           const Text(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                            'Fusce pretium dolor magna, at pellentesque tortor accumsan eget.',
+                            'Fusce pretium dolor magna, at pellentesque tortor accumsan eget',
                             style: kHeroDescTextStyle,
                           ),
                           const SizedBox(height: 20),
