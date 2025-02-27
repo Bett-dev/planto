@@ -14,7 +14,7 @@ const kNavTextStyle = TextStyle(
 
 const kHeroTextStyle = TextStyle(
   fontSize: 118,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w600,
   color: Color(0xffff0000),
 );
 
