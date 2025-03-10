@@ -26,7 +26,7 @@ const kHeroDescTextStyle = TextStyle(
 
 const kHeroplantCardDescTextStyle = TextStyle(
   fontSize: 23,
-  fontWeight: FontWeight.5400,
+  fontWeight: FontWeight.w500,
   color: Color(0xffffffff),
 );
 
