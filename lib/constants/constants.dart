@@ -20,7 +20,7 @@ const kHeroTextStyle = TextStyle(
 
 const kHeroDescTextStyle = TextStyle(
   fontSize: 23,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w600,
   color: Color(0xffffffff),
 );
 
