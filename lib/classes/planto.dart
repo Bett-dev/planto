@@ -303,7 +303,7 @@ class PlantCard extends StatelessWidget {
                   'For Small Decs Ai Plate',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
