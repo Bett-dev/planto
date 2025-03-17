@@ -317,7 +317,7 @@ class PlantCard extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Ksh. 599/-',
+                  'Ksh. 699/-',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
