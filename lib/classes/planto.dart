@@ -300,7 +300,7 @@ class PlantCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'For Small Decs Ai Plae',
+                  'For Small Decs Ai Plaet',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
