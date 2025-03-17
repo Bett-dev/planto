@@ -312,7 +312,7 @@ class PlantCard extends StatelessWidget {
                   'Lorem ipsum doetium dolor magna, at pellentesque tortor accumsan eget',
                   style: TextStyle(
                     color: Colors.white70,
-                    fontSize: 12,
+                    fontSize: 18,
                   ),
                 ),
                 SizedBox(height: 20),
